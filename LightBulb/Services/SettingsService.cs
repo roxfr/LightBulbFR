@@ -44,6 +44,8 @@ namespace LightBulb.Services
 
         public bool IsGammaPollingEnabled { get; set; } = false;
 
+        public bool IsRelativeGammaModulationEnabled { get; set; } = false;
+
         // Application whitelist
 
         public bool IsApplicationWhitelistEnabled { get; set; } = false;

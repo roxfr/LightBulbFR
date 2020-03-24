@@ -40,6 +40,12 @@ namespace LightBulb.ViewModels.Components
             set => SettingsService.IsGammaPollingEnabled = value;
         }
 
+        public bool IsRelativeGammaModulationEnabled
+        {
+            get => SettingsService.IsRelativeGammaModulationEnabled;
+            set => SettingsService.IsRelativeGammaModulationEnabled = value;
+        }
+
         public AdvancedSettingsTabViewModel(SettingsService settingsService)
             : base(settingsService, 2, "Advanced")
         {

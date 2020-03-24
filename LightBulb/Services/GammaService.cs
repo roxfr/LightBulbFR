@@ -8,6 +8,8 @@ namespace LightBulb.Services
 {
     public class GammaService : IDisposable
     {
+        private readonly SettingsService _settingsService;
+
         private readonly object _lock = new object();
 
         // Device contexts for all monitors.
@@ -15,8 +17,10 @@ namespace LightBulb.Services
         // Note: device contexts need to be refreshed if the user enables/disables monitors while the program is running.
         private IReadOnlyList<DeviceContext> _deviceContexts = Array.Empty<DeviceContext>();
 
-        public GammaService()
+        public GammaService(SettingsService settingsService)
         {
+            _settingsService = settingsService;
+
             SystemEvents.DisplaySettingsChanged += OnDisplaySettingsChanged;
             ResetDeviceContexts();
         }
@@ -73,7 +77,8 @@ namespace LightBulb.Services
                     deviceContext.SetGamma(
                         GetRed() * colorConfiguration.Brightness,
                         GetGreen() * colorConfiguration.Brightness,
-                        GetBlue() * colorConfiguration.Brightness
+                        GetBlue() * colorConfiguration.Brightness,
+                        _settingsService.IsRelativeGammaModulationEnabled
                     );
                 }
             }

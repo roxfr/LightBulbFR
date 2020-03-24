@@ -8,6 +8,8 @@ namespace LightBulb.WindowsApi
 {
     public partial class DeviceContext : IDisposable
     {
+        private readonly GammaRamp? _initialRamp;
+
         private int _gammaChannelOffset;
 
         public IntPtr Handle { get; }
@@ -15,6 +17,8 @@ namespace LightBulb.WindowsApi
         public DeviceContext(IntPtr handle)
         {
             Handle = handle;
+
+            _initialRamp = GetGammaRamp();
         }
 
         ~DeviceContext()
@@ -22,9 +26,14 @@ namespace LightBulb.WindowsApi
             Dispose();
         }
 
-        private void SetGammaRamp(GammaRamp ramp) => NativeMethods.SetDeviceGammaRamp(Handle, ref ramp);
+        private GammaRamp? GetGammaRamp() =>
+            NativeMethods.GetDeviceGammaRamp(Handle, out var result)
+                ? result
+                : (GammaRamp?) null;
 
-        public void SetGamma(double redMultiplier, double greenMultiplier, double blueMultiplier)
+        private bool SetGammaRamp(GammaRamp ramp) => NativeMethods.SetDeviceGammaRamp(Handle, ref ramp);
+
+        public void SetGamma(double redMultiplier, double greenMultiplier, double blueMultiplier, bool respectInitialGamma = false)
         {
             // Create native ramp object
             var ramp = new GammaRamp
@@ -35,11 +44,23 @@ namespace LightBulb.WindowsApi
             };
 
             // Create linear ramps for each color
-            for (var i = 0; i < 256; i++)
+            for (ushort i = 0; i < 256; i++)
             {
-                ramp.Red[i] = (ushort) (i * 255 * redMultiplier);
-                ramp.Green[i] = (ushort) (i * 255 * greenMultiplier);
-                ramp.Blue[i] = (ushort) (i * 255 * blueMultiplier);
+                var redBase = respectInitialGamma && _initialRamp != null
+                    ? _initialRamp.Value.Red[i]
+                    : i * 255;
+
+                var greenBase = respectInitialGamma && _initialRamp != null
+                    ? _initialRamp.Value.Green[i]
+                    : i * 255;
+
+                var blueBase = respectInitialGamma && _initialRamp != null
+                    ? _initialRamp.Value.Blue[i]
+                    : i * 255;
+
+                ramp.Red[i] = (ushort) (redBase * redMultiplier);
+                ramp.Green[i] = (ushort) (greenBase * greenMultiplier);
+                ramp.Blue[i] = (ushort) (blueBase * blueMultiplier);
             }
 
             // Some drivers will ignore request to change gamma if the ramp is the same as last time
@@ -51,7 +72,8 @@ namespace LightBulb.WindowsApi
             ramp.Blue[255] = (ushort) (ramp.Blue[255] + _gammaChannelOffset);
 
             // Set gamma
-            SetGammaRamp(ramp);
+            if (!SetGammaRamp(ramp))
+                Debug.WriteLine("Could not set gamma ramp.");
         }
 
         public void Dispose()

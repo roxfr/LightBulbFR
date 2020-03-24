@@ -118,5 +118,23 @@
                 VerticalAlignment="Center"
                 IsChecked="{Binding IsGammaPollingEnabled}" />
         </Grid>
+
+        <!--  Relative gamma modulation  -->
+        <Grid Margin="6" ToolTip="Respect initial system gamma settings">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Text="Relative gamma modulation" />
+            <ToggleButton
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                IsChecked="{Binding IsRelativeGammaModulationEnabled}" />
+        </Grid>
     </StackPanel>
 </UserControl>
