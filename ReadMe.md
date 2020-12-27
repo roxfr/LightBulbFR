@@ -1,7 +1,6 @@
 *** FRENCH TRANSLATION TEST ***
 
 This is not a viable solution over time because I directly modified the '.xaml' and '.cs' source files.\
-The best is to use a translation tool such as Transifex or Weblate in order to generate '.ts' or '.po' files.
 
 <ins>Note </ins>: The antivirus may control the executable.
 
