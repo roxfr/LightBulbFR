@@ -22,7 +22,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Activ./Désact. LightBulb"
+                Text="Dés/Activer LightBulb"
                 ToolTip="Touche de raccourci pour activer/désactiver LightBulb" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
