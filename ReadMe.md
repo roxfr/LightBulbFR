@@ -1,10 +1,12 @@
 => FRENCH TRANSLATION TEST
 
-https://github.com/roxfr/LightBulbFR/blob/master/Installer/LightBulbFR-Installer.exe
+Note : The antivirus may control the executable.
 
-https://github.com/roxfr/LightBulbFR/blob/master/.screenshots/LightBulbFR_01.bmp
+![LightBulbFR-Installer.exe](https://github.com/roxfr/LightBulbFR/blob/master/Installer/LightBulbFR-Installer.exe)
 
-https://github.com/roxfr/LightBulbFR/blob/master/.screenshots/LightBulbFR_02.bmp
+![LightBulbFR_01](https://github.com/roxfr/LightBulbFR/blob/master/.screenshots/LightBulbFR_01.bmp?raw=true)
+
+![LightBulbFR_02](https://github.com/roxfr/LightBulbFR/blob/master/.screenshots/LightBulbFR_02.bmp?raw=true)
 
 # LightBulb 💡
 
