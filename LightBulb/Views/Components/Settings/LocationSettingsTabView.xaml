@@ -30,7 +30,7 @@
                 ToolTip="Configurer manuellement le lever et le coucher du soleil" />
             <RadioButton
                 Grid.Column="1"
-                Content="Basé sur l'emplacement"
+                Content="Sur l'emplacement"
                 IsChecked="{Binding IsManualSunriseSunsetEnabled, Converter={x:Static converters:InverseBoolConverter.Instance}}"
                 ToolTip="Configurer l'emplacement et utiliser-le pour calculer automatiquement le lever et le coucher du soleil" />
         </Grid>
