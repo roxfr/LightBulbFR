@@ -18,14 +18,14 @@
             Margin="6"
             Orientation="Horizontal"
             ToolTip="Température de la couleur pendant la journée">
-            <TextBlock VerticalAlignment="Center" Text="Temp. couleur pendant la journée :" />
+            <TextBlock VerticalAlignment="Center" Text="Tempér. couleur pendant journée :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
                 Padding="0"
                 VerticalAlignment="Center"
                 BorderBrush="{DynamicResource MaterialDesignDivider}"
-                Text="{Binding DayTemperature, Converter={x:Static converters:DoubleToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}}" />
+                Text="{Binding DayTemperature, Converter={x:Static converters:DoubleToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}} K" />
         </StackPanel>
         <Slider
             Margin="8,0,8,6"
@@ -42,14 +42,14 @@
             Margin="6"
             Orientation="Horizontal"
             ToolTip="Température de la couleur pendant la soirée">
-            <TextBlock VerticalAlignment="Center" Text="Temp. couleur pendant la soirée :" />
+            <TextBlock VerticalAlignment="Center" Text="Tempér. couleur pendant soirée :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
                 Padding="0"
                 VerticalAlignment="Center"
                 BorderBrush="{DynamicResource MaterialDesignDivider}"
-                Text="{Binding NightTemperature, Converter={x:Static converters:DoubleToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}}" />
+                Text="{Binding NightTemperature, Converter={x:Static converters:DoubleToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}} K" />
         </StackPanel>
         <Slider
             Margin="8,0,8,6"
