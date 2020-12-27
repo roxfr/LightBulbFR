@@ -73,7 +73,7 @@ Appuyer sur OK pour déverrouiller la plage gamma.".Trim();
 
             var message = $@"
 Merci d'avoir installé {App.Name} !
-Pour bénéficier de l'expérience la plus personnalisée, configurez votre emplacement dans les paramètres.
+Pour bénéficier de l'expérience la plus personnalisée, configurer votre emplacement dans les paramètres.
 
 Appuyer sur OK pour ouvrir les paramètres.".Trim();
 
