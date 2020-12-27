@@ -57,7 +57,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Config. par défaut pour paramètres de jour" />
+                Text="Config. par défaut paramètres de jour" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"
