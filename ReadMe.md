@@ -2,6 +2,9 @@
 
 Note : The antivirus may control the executable.
 
+This is not a viable solution over time because I directly modified the '.xaml' and '.cs' source files.
+The best is to use a translation tool such as Transifex or Weblate in order to generate '.ts' or '.po' files.
+
 ![LightBulbFR-Installer.exe](https://github.com/roxfr/LightBulbFR/blob/master/Installer/LightBulbFR-Installer.exe)
 
 ![LightBulbFR_01](https://github.com/roxfr/LightBulbFR/blob/master/.screenshots/LightBulbFR_01.bmp?raw=true)
