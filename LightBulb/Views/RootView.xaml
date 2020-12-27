@@ -69,7 +69,7 @@
                             <MenuItem
                                 x:Name="ShowWindowMenuItem"
                                 Click="ShowWindowMenuItem_OnClick"
-                                Header="Open">
+                                Header="Ouvrir">
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="WindowMaximize" />
                                 </MenuItem.Icon>
@@ -77,7 +77,7 @@
                             <MenuItem
                                 s:View.ActionTarget="{Binding Core}"
                                 Command="{s:Action Enable}"
-                                Header="Enable"
+                                Header="Activer"
                                 Visibility="{Binding Core.IsEnabled, Converter={x:Static s:BoolToVisibilityConverter.InverseInstance}}">
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="Power" />
@@ -86,24 +86,24 @@
                             <MenuItem
                                 s:View.ActionTarget="{Binding Core}"
                                 Command="{s:Action Disable}"
-                                Header="Disable"
+                                Header="Désactiver"
                                 Visibility="{Binding Core.IsEnabled, Converter={x:Static s:BoolToVisibilityConverter.Instance}}">
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="Power" />
                                 </MenuItem.Icon>
                             </MenuItem>
-                            <MenuItem Header="Disable for...">
+                            <MenuItem Header="Désactiver pour...">
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="PowerSettings" />
                                 </MenuItem.Icon>
                                 <MenuItem
                                     s:View.ActionTarget="{Binding Core}"
                                     Command="{s:Action DisableTemporarilyUntilSunrise}"
-                                    Header="Until sunrise" />
+                                    Header="Jusqu'au lever du soleil" />
                                 <MenuItem
                                     s:View.ActionTarget="{Binding Core}"
                                     Command="{s:Action DisableTemporarily}"
-                                    Header="1 day">
+                                    Header="1 jour">
                                     <MenuItem.CommandParameter>
                                         <system:TimeSpan>24:0:0</system:TimeSpan>
                                     </MenuItem.CommandParameter>
@@ -111,7 +111,7 @@
                                 <MenuItem
                                     s:View.ActionTarget="{Binding Core}"
                                     Command="{s:Action DisableTemporarily}"
-                                    Header="12 hours">
+                                    Header="12 heures">
                                     <MenuItem.CommandParameter>
                                         <system:TimeSpan>12:0:0</system:TimeSpan>
                                     </MenuItem.CommandParameter>
@@ -119,7 +119,7 @@
                                 <MenuItem
                                     s:View.ActionTarget="{Binding Core}"
                                     Command="{s:Action DisableTemporarily}"
-                                    Header="6 hours">
+                                    Header="6 heures">
                                     <MenuItem.CommandParameter>
                                         <system:TimeSpan>6:0:0</system:TimeSpan>
                                     </MenuItem.CommandParameter>
@@ -127,7 +127,7 @@
                                 <MenuItem
                                     s:View.ActionTarget="{Binding Core}"
                                     Command="{s:Action DisableTemporarily}"
-                                    Header="3 hours">
+                                    Header="3 heures">
                                     <MenuItem.CommandParameter>
                                         <system:TimeSpan>3:0:0</system:TimeSpan>
                                     </MenuItem.CommandParameter>
@@ -135,7 +135,7 @@
                                 <MenuItem
                                     s:View.ActionTarget="{Binding Core}"
                                     Command="{s:Action DisableTemporarily}"
-                                    Header="1 hour">
+                                    Header="1 heure">
                                     <MenuItem.CommandParameter>
                                         <system:TimeSpan>1:0:0</system:TimeSpan>
                                     </MenuItem.CommandParameter>
@@ -165,12 +165,12 @@
                                     </MenuItem.CommandParameter>
                                 </MenuItem>
                             </MenuItem>
-                            <MenuItem Command="{s:Action ShowAbout}" Header="About">
+                            <MenuItem Command="{s:Action ShowAbout}" Header="À propos">
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="Web" />
                                 </MenuItem.Icon>
                             </MenuItem>
-                            <MenuItem Command="{s:Action Exit}" Header="Exit">
+                            <MenuItem Command="{s:Action Exit}" Header="Quitter">
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="Close" />
                                 </MenuItem.Icon>
