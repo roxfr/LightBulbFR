@@ -48,10 +48,10 @@ namespace LightBulb.ViewModels
                 return;
 
             var message = $@"
-{App.Name} has detected that this computer doesn't have the extended gamma range unlocked.
-This may cause the app to work incorrectly for some color configurations.
+{App.Name} a détecté que la plage gamma étendue n'est pas déverrouillée sur cet ordinateur.
+Cela peut entraîner un dysfonctionnement de l'application pour certaines configurations de couleurs.
 
-Press OK to unlock gamma range.".Trim();
+Appuyer sur OK pour déverrouiller la plage gamma.".Trim();
 
             var dialog = _viewModelFactory.CreateMessageBoxViewModel(
                 "Limited gamma range",
@@ -72,15 +72,15 @@ Press OK to unlock gamma range.".Trim();
                 return;
 
             var message = $@"
-Thank you for installing {App.Name}!
-To get the most personalized experience, configure your location in settings.
+Merci d'avoir installé {App.Name}!
+Pour bénéficier de l'expérience la plus personnalisée, configurez votre emplacement dans les paramètres.
 
-Press OK to open settings.".Trim();
+Appuyer sur OK pour ouvrir les paramètres.".Trim();
 
             var dialog = _viewModelFactory.CreateMessageBoxViewModel(
-                "Welcome!",
+                "Bienvenu !",
                 message,
-                "OK", "CANCEL"
+                "OK", "ANNULER"
             );
 
             // Disable first time experience in the future

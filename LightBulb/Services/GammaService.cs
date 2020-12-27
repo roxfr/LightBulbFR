@@ -70,13 +70,13 @@ namespace LightBulb.Services
         private void InvalidateGamma()
         {
             _lastGammaInvalidationTimestamp = DateTimeOffset.Now;
-            Debug.WriteLine("Gamma invalidated.");
+            Debug.WriteLine("Gamma invalidé.");
         }
 
         private void InvalidateDeviceContext()
         {
             _isValidDeviceContextHandle = false;
-            Debug.WriteLine("Device context invalidated.");
+            Debug.WriteLine("Contexte de l'appareil invalidé.");
 
             InvalidateGamma();
         }
@@ -149,7 +149,7 @@ namespace LightBulb.Services
 
             _lastConfiguration = configuration;
             _lastUpdateTimestamp = DateTimeOffset.Now;
-            Debug.WriteLine($"Updated gamma to {configuration}.");
+            Debug.WriteLine($"Gamma mis à jour à {configuration}.");
         }
 
         public void Dispose()

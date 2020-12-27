@@ -39,7 +39,7 @@ namespace LightBulb.ViewModels.Components.Settings
         public string? LocationQuery { get; set; }
 
         public LocationSettingsTabViewModel(SettingsService settingsService)
-            : base(settingsService, 1, "Location")
+            : base(settingsService, 1, "Emplacement")
         {
             // Bind string representation of location to the actual value
             settingsService.BindAndInvoke(o => o.Location, (sender, args) => LocationQuery = Location?.ToString());

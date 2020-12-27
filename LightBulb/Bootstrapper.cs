@@ -81,7 +81,7 @@ namespace LightBulb
         {
             base.OnUnhandledException(e);
 
-            MessageBox.Show(e.Exception.ToString(), "Error occured", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show(e.Exception.ToString(), "Une erreur est survenue", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 #endif
 

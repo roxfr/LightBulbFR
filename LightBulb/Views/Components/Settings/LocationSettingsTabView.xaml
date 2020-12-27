@@ -16,7 +16,7 @@
     mc:Ignorable="d">
     <StackPanel Orientation="Vertical">
         <!--  Manual/location-based configuration  -->
-        <TextBlock Margin="6" Text="Solar configuration:" />
+        <TextBlock Margin="6" Text="Configuration solaire :" />
         <Grid Margin="6,0,6,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -25,21 +25,21 @@
 
             <RadioButton
                 Grid.Column="0"
-                Content="Manual"
+                Content="Manuel"
                 IsChecked="{Binding IsManualSunriseSunsetEnabled}"
-                ToolTip="Configure sunrise and sunset manually" />
+                ToolTip="Configurer manuellement le lever et le coucher du soleil" />
             <RadioButton
                 Grid.Column="1"
-                Content="Location-based"
+                Content="Basé sur l'emplacement"
                 IsChecked="{Binding IsManualSunriseSunsetEnabled, Converter={x:Static converters:InverseBoolConverter.Instance}}"
-                ToolTip="Configure location and use it to automatically calculate sunrise and sunset" />
+                ToolTip="Configurer l'emplacement et utiliser-le pour calculer automatiquement le lever et le coucher du soleil" />
         </Grid>
 
         <!--  Manual  -->
         <StackPanel Orientation="Vertical" Visibility="{Binding IsManualSunriseSunsetEnabled, Converter={x:Static s:BoolToVisibilityConverter.Instance}}">
             <!--  Sunrise time  -->
             <StackPanel Margin="6" Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" Text="Sunrise:" />
+                <TextBlock VerticalAlignment="Center" Text="Lever du soleil :" />
                 <TextBox
                     MinWidth="30"
                     Margin="8,0"
@@ -58,7 +58,7 @@
 
             <!--  Sunset time  -->
             <StackPanel Margin="6" Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" Text="Sunset:" />
+                <TextBlock VerticalAlignment="Center" Text="Coucher du soleil :" />
                 <TextBox
                     MinWidth="30"
                     Margin="8,0"
@@ -79,7 +79,7 @@
         <!--  Location-based  -->
         <StackPanel Orientation="Vertical" Visibility="{Binding IsManualSunriseSunsetEnabled, Converter={x:Static s:BoolToVisibilityConverter.InverseInstance}}">
             <!--  Location  -->
-            <TextBlock Margin="6" Text="Your location:" />
+            <TextBlock Margin="6" Text="Votre emplacement :" />
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -94,7 +94,7 @@
                     Padding="4"
                     Command="{s:Action AutoDetectLocation}"
                     Style="{DynamicResource MaterialDesignFlatButton}"
-                    ToolTip="Try to detect location automatically based on your IP">
+                    ToolTip="Essaye de détecter automatiquement l'emplacement en fonction de votre adresse IP">
                     <materialDesign:PackIcon
                         Width="24"
                         Height="24"
@@ -110,10 +110,10 @@
                     Text="{Binding LocationQuery, UpdateSourceTrigger=PropertyChanged}">
                     <TextBox.ToolTip>
                         <TextBlock>
-                            <Run Text="You can enter coordinates directly or specify a search query" />
+                            <Run Text="Vous pouvez saisir directement les coordonnées ou spécifier une requête de recherche" />
                             <LineBreak />
                             <LineBreak />
-                            <Run Text="Examples of valid values:" />
+                            <Run Text="Exemples de valeurs valides :" />
                             <LineBreak />
                             <Run FontWeight="SemiBold" Text="41.25, -120.9762" />
                             <LineBreak />
@@ -134,7 +134,7 @@
                     Command="{s:Action SetLocation}"
                     IsDefault="True"
                     Style="{DynamicResource MaterialDesignFlatButton}"
-                    ToolTip="Set location">
+                    ToolTip="Définir l'emplacement">
                     <materialDesign:PackIcon
                         Width="24"
                         Height="24"
@@ -153,7 +153,7 @@
             <TextBlock
                 Margin="6"
                 Foreground="DarkRed"
-                Text="There was an error resolving location"
+                Text="Une erreur s'est produite lors de la résolution de l'emplacement"
                 Visibility="{Binding IsLocationError, Converter={x:Static s:BoolToVisibilityConverter.Instance}}" />
         </StackPanel>
     </StackPanel>

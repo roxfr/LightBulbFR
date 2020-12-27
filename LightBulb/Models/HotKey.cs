@@ -19,7 +19,7 @@ namespace LightBulb.Models
         public override string ToString()
         {
             if (Key == Key.None && Modifiers == ModifierKeys.None)
-                return "< None >";
+                return "< Aucun >";
 
             var buffer = new StringBuilder();
 

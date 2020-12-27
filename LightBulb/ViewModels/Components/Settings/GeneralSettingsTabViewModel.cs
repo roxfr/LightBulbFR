@@ -68,7 +68,7 @@ namespace LightBulb.ViewModels.Components.Settings
         }
 
         public GeneralSettingsTabViewModel(SettingsService settingsService)
-            : base(settingsService, 0, "General")
+            : base(settingsService, 0, "Général")
         {
         }
     }

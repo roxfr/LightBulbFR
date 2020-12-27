@@ -23,7 +23,7 @@ namespace LightBulb.Services
             if (hotKeyRegistration != null)
                 _hotKeyRegistrations.Add(hotKeyRegistration);
             else
-                Debug.WriteLine("Failed to register hotkey.");
+                Debug.WriteLine("Échec de l'enregistrement du raccourci clavier.");
         }
 
         public void UnregisterAllHotKeys()

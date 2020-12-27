@@ -12,7 +12,7 @@
     mc:Ignorable="d">
     <StackPanel Orientation="Vertical">
         <!--  Auto start  -->
-        <Grid Margin="6" ToolTip="Launch LightBulb at Windows startup">
+        <Grid Margin="6" ToolTip="Lancer LightBulb au démarrage de Windows">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -21,7 +21,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Start with Windows" />
+                Text="Démarrer avec Windows" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"
@@ -30,7 +30,7 @@
         </Grid>
 
         <!--  Auto update  -->
-        <Grid Margin="6" ToolTip="Keep LightBulb updated by automatically installing new versions as they become available">
+        <Grid Margin="6" ToolTip="Garder LightBulb à jour en installant automatiquement les nouvelles versions dès qu'elles sont disponibles">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -39,7 +39,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Auto-update" />
+                Text="Mise à jour automatique" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"
@@ -48,7 +48,7 @@
         </Grid>
 
         <!--  Default to day time  -->
-        <Grid Margin="6" ToolTip="When LightBulb is disabled or paused, restore configured day-time temperature and brightness instead of default monitor gamma">
+        <Grid Margin="6" ToolTip="Lorsque LightBulb est désactivé ou mis en pause, restaurer la température et la luminosité de jour configurées au lieu du gamma par défaut du moniteur">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -57,7 +57,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Default to day-time configuration" />
+                Text="Configuration par défaut pour les paramètres de jour" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"
@@ -66,7 +66,7 @@
         </Grid>
 
         <!--  Pause when full screen  -->
-        <Grid Margin="6" ToolTip="Pause LightBulb when any fullscreen window is in foreground">
+        <Grid Margin="6" ToolTip="Suspendre LightBulb lorsqu'une fenêtre plein écran est au premier plan">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -75,7 +75,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Pause when fullscreen" />
+                Text="Pause en plein écran" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"
@@ -84,7 +84,7 @@
         </Grid>
 
         <!--  Configuration smoothing  -->
-        <Grid Margin="6" ToolTip="Transition slowly when enabling or disabling LightBulb to give time for eyes to adjust">
+        <Grid Margin="6" ToolTip="Transition lente lors de l'activation ou de la désactivation de LightBulb pour laisser le temps aux yeux de s'adapter">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -93,7 +93,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Gamma smoothing" />
+                Text="Lissage du gamma" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"
@@ -102,7 +102,7 @@
         </Grid>
 
         <!--  Gamma polling  -->
-        <Grid Margin="6" ToolTip="Force-refresh gamma at regular intervals to make sure it doesn't get overriden by other programs">
+        <Grid Margin="6" ToolTip="Forcer l'actualisation du gamma à intervalles réguliers pour s'assurer qu'il n'est pas remplacé par d'autres programmes">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -111,7 +111,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Gamma polling" />
+                Text="Contrôle du gamma" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"

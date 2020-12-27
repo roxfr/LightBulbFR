@@ -27,7 +27,7 @@ namespace LightBulb.ViewModels.Components.Settings
         public ApplicationWhitelistSettingsTabViewModel(
             SettingsService settingsService,
             ExternalApplicationService externalApplicationService)
-            : base(settingsService, 3, "Application whitelist")
+            : base(settingsService, 3, "Liste blanche des applications")
         {
             _externalApplicationService = externalApplicationService;
         }

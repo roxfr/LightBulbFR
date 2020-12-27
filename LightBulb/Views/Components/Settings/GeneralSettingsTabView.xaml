@@ -17,8 +17,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Color temperature during the day">
-            <TextBlock VerticalAlignment="Center" Text="Day-time color temperature:" />
+            ToolTip="Température de la couleur pendant la journée">
+            <TextBlock VerticalAlignment="Center" Text="Température de la couleur durant la journée :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -41,8 +41,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Color temperature during the night">
-            <TextBlock VerticalAlignment="Center" Text="Night-time color temperature:" />
+            ToolTip="Température de la couleur pendant la soirée/nuit">
+            <TextBlock VerticalAlignment="Center" Text="Température de la couleur durant la soirée/nuit :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -65,8 +65,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Brightness during the day">
-            <TextBlock VerticalAlignment="Center" Text="Day-time brightness:" />
+            ToolTip="Luminosité pendant la journée">
+            <TextBlock VerticalAlignment="Center" Text="Luminosité de jour :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -89,8 +89,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Brightness during the night">
-            <TextBlock VerticalAlignment="Center" Text="Night-time brightness:" />
+            ToolTip="Luminosité pendant la soirée/nuit">
+            <TextBlock VerticalAlignment="Center" Text="Luminosité de soirée/nuit :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -113,8 +113,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Duration of time it takes to switch between day-time and night-time configurations">
-            <TextBlock VerticalAlignment="Center" Text="Transition duration:" />
+            ToolTip="Durée du temps nécessaire pour basculer entre les configurations de jour et de nuit">
+            <TextBlock VerticalAlignment="Center" Text="Durée de la transition :" />
             <TextBox
                 MinWidth="50"
                 Margin="8,0"
@@ -135,8 +135,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Offset that specifies how early or late the transition starts relatively to sunrise and sunset">
-            <TextBlock VerticalAlignment="Center" Text="Transition offset:" />
+            ToolTip="Décalage qui spécifie le début ou la fin de la transition par rapport au lever et au coucher du soleil">
+            <TextBlock VerticalAlignment="Center" Text="Décalage de la transition :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"

@@ -32,14 +32,14 @@
             TextAlignment="Center">
             <TextBlock.ToolTip>
                 <TextBlock>
-                    <Run Text="Sunset transition starts at" />
+                    <Run Text="La transition au coucher du soleil commence à" />
                     <Run FontWeight="SemiBold" Text="{Binding SunsetStart, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
-                    <Run Text="and ends at" />
+                    <Run Text="et se termine à" />
                     <Run FontWeight="SemiBold" Text="{Binding SunsetEnd, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
                 </TextBlock>
             </TextBlock.ToolTip>
 
-            <Run Text="Sunset" />
+            <Run Text="Coucher du soleil" />
             <LineBreak />
             <Run FontWeight="Regular" Text="{Binding SolarTimes.Sunset, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
         </TextBlock>
@@ -96,16 +96,16 @@
                 Visibility="{Binding CanResetConfigurationOffset, Converter={x:Static s:BoolToVisibilityConverter.Instance}}">
                 <StackPanel.ToolTip>
                     <TextBlock>
-                        <Run Text="Current temperature and brightness values are adjusted by an offset:" />
+                        <Run Text="Les valeurs de température et de luminosité actuelles sont ajustées par un décalage :" />
                         <LineBreak />
-                        <Run Text="Temperature offset:" />
+                        <Run Text="Décalage de la température :" />
                         <Run Text="{Binding TemperatureOffset, StringFormat=\{0:F0\} K, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
                         <LineBreak />
-                        <Run Text="Brightness offset:" />
+                        <Run Text="Décalage de la luminosité :" />
                         <Run Text="{Binding BrightnessOffset, StringFormat=\{0:P0\}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontWeight="SemiBold" Text="Click to reset" />
+                        <Run FontWeight="SemiBold" Text="Cliquer pour réinitialiser" />
                     </TextBlock>
                 </StackPanel.ToolTip>
                 <materialDesign:PackIcon
@@ -115,7 +115,7 @@
                 <TextBlock
                     Margin="4,0,0,0"
                     FontSize="15"
-                    Text="offset" />
+                    Text="décalage" />
             </StackPanel>
 
             <!--  Current temperature and brightness  -->
@@ -167,14 +167,14 @@
             TextAlignment="Center">
             <TextBlock.ToolTip>
                 <TextBlock>
-                    <Run Text="Sunrise transition starts at" />
+                    <Run Text="La transition au lever du soleil commence à" />
                     <Run FontWeight="SemiBold" Text="{Binding SunriseStart, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
-                    <Run Text="and ends at" />
+                    <Run Text="et se termine à" />
                     <Run FontWeight="SemiBold" Text="{Binding SunriseEnd, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
                 </TextBlock>
             </TextBlock.ToolTip>
 
-            <Run Text="Sunrise" />
+            <Run Text="Lever du soleil" />
             <LineBreak />
             <Run FontWeight="Regular" Text="{Binding SolarTimes.Sunrise, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
         </TextBlock>

@@ -60,7 +60,7 @@
 
                                 <!--  Status  -->
                                 <TextBlock Text="{Binding Core.CurrentConfiguration}" Visibility="{Binding IsActive, Converter={x:Static s:BoolToVisibilityConverter.Instance}}" />
-                                <TextBlock Text="Disabled" Visibility="{Binding Core.IsActive, Converter={x:Static s:BoolToVisibilityConverter.InverseInstance}}" />
+                                <TextBlock Text="Désactivé" Visibility="{Binding Core.IsActive, Converter={x:Static s:BoolToVisibilityConverter.InverseInstance}}" />
                             </StackPanel>
                         </Border>
                     </tb:TaskbarIcon.TrayToolTip>
@@ -201,7 +201,7 @@
                             VerticalAlignment="Center"
                             IsChecked="{Binding Core.IsEnabled}"
                             Style="{DynamicResource MaterialDesignActionAccentToggleButton}"
-                            ToolTip="Switch LightBulb on/off">
+                            ToolTip="Activer/désactiver LightBulb">
                             <materialDesign:ToggleButtonAssist.OnContent>
                                 <materialDesign:PackIcon
                                     Width="24"
@@ -231,7 +231,7 @@
                             VerticalAlignment="Center"
                             Click="CloseButton_OnClick"
                             Style="{DynamicResource MaterialDesignFlatDarkButton}"
-                            ToolTip="Hide LightBulb to tray">
+                            ToolTip="Masquer LightBulb de la barre des tâches">
                             <materialDesign:PackIcon
                                 Width="24"
                                 Height="24"
@@ -257,7 +257,7 @@
                         s:View.ActionTarget="{Binding Core}"
                         Command="{s:Action EnableCyclePreview}"
                         Style="{DynamicResource MaterialDesignFlatButton}"
-                        ToolTip="Preview 24-hour cycle"
+                        ToolTip="Aperçu du cycle de 24 heures"
                         Visibility="{Binding Core.IsCyclePreviewEnabled, Converter={x:Static s:BoolToVisibilityConverter.InverseInstance}}">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -267,7 +267,7 @@
                             <TextBlock
                                 Margin="4,0,0,0"
                                 VerticalAlignment="Center"
-                                Text="PREVIEW" />
+                                Text="APERÇU" />
                         </StackPanel>
                     </Button>
 
@@ -277,7 +277,7 @@
                         s:View.ActionTarget="{Binding Core}"
                         Command="{s:Action DisableCyclePreview}"
                         Style="{DynamicResource MaterialDesignFlatButton}"
-                        ToolTip="Stop preview"
+                        ToolTip="Arrêter l'aperçu"
                         Visibility="{Binding Core.IsCyclePreviewEnabled, Converter={x:Static s:BoolToVisibilityConverter.Instance}}">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -287,7 +287,7 @@
                             <TextBlock
                                 Margin="4,0,0,0"
                                 VerticalAlignment="Center"
-                                Text="STOP" />
+                                Text="ARRÊTER" />
                         </StackPanel>
                     </Button>
 
@@ -296,7 +296,7 @@
                         Margin="8"
                         Command="{s:Action ShowSettings}"
                         Style="{DynamicResource MaterialDesignFlatButton}"
-                        ToolTip="Open settings">
+                        ToolTip="Ouvrir les réglages">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="24"
@@ -305,7 +305,7 @@
                             <TextBlock
                                 Margin="4,0,0,0"
                                 VerticalAlignment="Center"
-                                Text="SETTINGS" />
+                                Text="RÉGLAGES" />
                         </StackPanel>
                     </Button>
 
@@ -314,7 +314,7 @@
                         Margin="8"
                         Command="{s:Action ShowAbout}"
                         Style="{DynamicResource MaterialDesignFlatButton}"
-                        ToolTip="Open project page on GitHub">
+                        ToolTip="Ouvrir la page du projet sur GitHub">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="24"
@@ -323,7 +323,7 @@
                             <TextBlock
                                 Margin="4,0,0,0"
                                 VerticalAlignment="Center"
-                                Text="ABOUT" />
+                                Text="À PROPOS" />
                         </StackPanel>
                     </Button>
                 </StackPanel>

@@ -14,7 +14,7 @@ namespace LightBulb.ViewModels.Dialogs
 
         public bool IsCancelButtonVisible { get; set; } = false;
 
-        public string? CancelButtonText { get; set; } = "CANCEL";
+        public string? CancelButtonText { get; set; } = "ANNULER";
     }
 
     public static class MessageBoxViewModelExtensions

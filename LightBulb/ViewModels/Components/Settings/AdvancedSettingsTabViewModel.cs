@@ -41,7 +41,7 @@ namespace LightBulb.ViewModels.Components.Settings
         }
 
         public AdvancedSettingsTabViewModel(SettingsService settingsService)
-            : base(settingsService, 2, "Advanced")
+            : base(settingsService, 2, "Avancé")
         {
         }
     }

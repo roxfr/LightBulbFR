@@ -16,7 +16,7 @@
     mc:Ignorable="d">
     <StackPanel Orientation="Vertical">
         <!--  Is enabled  -->
-        <Grid Margin="6" ToolTip="Pause LightBulb when any of the selected applications are in foreground">
+        <Grid Margin="6" ToolTip="Suspendre LightBulb lorsqu'une des applications sélectionnées est au premier plan">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -25,7 +25,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Application whitelist" />
+                Text="Liste blanche des applications" />
             <ToggleButton
                 Grid.Column="1"
                 HorizontalAlignment="Right"
@@ -34,8 +34,8 @@
         </Grid>
 
         <!--  Refresh list  -->
-        <TextBlock Margin="6,0" ToolTip="Refresh the list of available applications">
-            <Hyperlink Command="{s:Action PullAvailableApplications}">Refresh</Hyperlink>
+        <TextBlock Margin="6,0" ToolTip="Actualiser la liste des applications disponibles">
+            <Hyperlink Command="{s:Action PullAvailableApplications}">Rafraîchir</Hyperlink>
         </TextBlock>
 
         <!--  Whitelisted applications  -->

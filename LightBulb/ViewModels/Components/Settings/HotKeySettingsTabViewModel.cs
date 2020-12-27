@@ -42,7 +42,7 @@ namespace LightBulb.ViewModels.Components.Settings
         }
 
         public HotKeySettingsTabViewModel(SettingsService settingsService)
-            : base(settingsService, 4, "Hotkeys")
+            : base(settingsService, 4, "Raccourcis clavier")
         {
         }
     }

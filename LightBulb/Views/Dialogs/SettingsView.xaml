@@ -111,22 +111,22 @@
                 <Button
                     Margin="8"
                     Command="{s:Action Reset}"
-                    Content="RESET"
+                    Content="RÉINITIALISER"
                     Style="{DynamicResource MaterialDesignFlatButton}"
-                    ToolTip="Reset all settings to their defaults" />
+                    ToolTip="Réinitialiser tous les paramètres à leurs valeurs par défaut" />
 
                 <!--  Cancel  -->
                 <Button
                     Margin="8"
                     Command="{s:Action Cancel}"
-                    Content="CANCEL"
+                    Content="ANNULER"
                     Style="{DynamicResource MaterialDesignFlatButton}" />
 
                 <!--  Save  -->
                 <Button
                     Margin="8"
                     Command="{s:Action Save}"
-                    Content="SAVE"
+                    Content="ENREGISTRER"
                     Style="{DynamicResource MaterialDesignFlatButton}" />
             </StackPanel>
         </Grid>
