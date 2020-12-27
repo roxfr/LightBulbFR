@@ -1,5 +1,11 @@
 => FRENCH TRANSLATION TEST
 
+https://github.com/roxfr/LightBulbFR/blob/master/Installer/LightBulbFR-Installer.exe
+
+https://github.com/roxfr/LightBulbFR/blob/master/.screenshots/LightBulbFR_01.bmp
+
+https://github.com/roxfr/LightBulbFR/blob/master/.screenshots/LightBulbFR_02.bmp
+
 # LightBulb 💡
 
 [![Build](https://github.com/Tyrrrz/LightBulb/workflows/CI/badge.svg?branch=master)](https://github.com/Tyrrrz/LightBulb/actions)
