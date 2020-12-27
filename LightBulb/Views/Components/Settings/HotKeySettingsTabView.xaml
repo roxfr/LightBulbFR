@@ -22,7 +22,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Activ./Désactiv. LightBulb"
+                Text="Activ./Désact. LightBulb"
                 ToolTip="Touche de raccourci pour activer/désactiver LightBulb" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
@@ -44,7 +44,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Décalage température +"
+                Text="Décalage temp. +"
                 ToolTip="Touche de raccourci pour augmenter le décalage de température actuel" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
@@ -66,7 +66,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Décalage température -"
+                Text="Décalage temp. -"
                 ToolTip="Touche de raccourci pour diminuer le décalage de température actuel" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
