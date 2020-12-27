@@ -17,8 +17,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Temp. couleur pendant la journée">
-            <TextBlock VerticalAlignment="Center" Text="Température de la couleur durant la journée :" />
+            ToolTip="Température de la couleur pendant la journée">
+            <TextBlock VerticalAlignment="Center" Text="Température couleur pendant la journée :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -41,8 +41,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Temp. couleur couleur pendant la soirée">
-            <TextBlock VerticalAlignment="Center" Text="Température de la couleur durant la soirée :" />
+            ToolTip="Température de la couleur pendant la soirée">
+            <TextBlock VerticalAlignment="Center" Text="Température couleur pendant la soirée :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
