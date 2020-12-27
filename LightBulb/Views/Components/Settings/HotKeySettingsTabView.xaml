@@ -22,7 +22,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Activer/désactiver LightBulb"
+                Text="On/Off LightBulb"
                 ToolTip="Touche de raccourci pour activer/désactiver LightBulb" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
@@ -44,7 +44,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Décalage de température +"
+                Text="Décalage température +"
                 ToolTip="Touche de raccourci pour augmenter le décalage de température actuel" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
@@ -66,7 +66,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Décalage de température -"
+                Text="Décalage température -"
                 ToolTip="Touche de raccourci pour diminuer le décalage de température actuel" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
@@ -88,7 +88,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Décalage de luminosité +"
+                Text="Décalage luminosité +"
                 ToolTip="Touche de raccourci pour augmenter le décalage de luminosité actuel" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
@@ -110,7 +110,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Décalage de luminosité -"
+                Text="Décalage luminosité -"
                 ToolTip="Touche de raccourci pour diminuer le décalage de luminosité actuel" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
@@ -132,7 +132,7 @@
             <TextBlock
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Text="Réinitialiser le décalage"
+                Text="Réinitialiser décalage"
                 ToolTip="Touche de raccourci pour réinitialiser la température actuelle et le décalage de luminosité" />
             <controls:HotKeyTextBox
                 Grid.Column="1"
