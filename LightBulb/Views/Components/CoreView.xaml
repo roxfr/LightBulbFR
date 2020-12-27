@@ -39,7 +39,7 @@
                 </TextBlock>
             </TextBlock.ToolTip>
 
-            <Run Text="Coucher\ndu soleil" />
+            <Run Text="Coucher&#x0a;du soleil" />
             <LineBreak />
             <Run FontWeight="Regular" Text="{Binding SolarTimes.Sunset, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
         </TextBlock>
@@ -174,7 +174,7 @@
                 </TextBlock>
             </TextBlock.ToolTip>
 
-            <Run Text="Lever\ndu soleil" />
+            <Run Text="Lever&#x0a;du soleil" />
             <LineBreak />
             <Run FontWeight="Regular" Text="{Binding SolarTimes.Sunrise, Converter={x:Static converters:TimeOfDayToStringConverter.Instance}, ConverterCulture={x:Static globalization:CultureInfo.CurrentCulture}, Mode=OneWay}" />
         </TextBlock>
