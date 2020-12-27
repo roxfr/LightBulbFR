@@ -1,6 +1,6 @@
 *** FRENCH TRANSLATION TEST ***
 
-This is not a viable solution over time because I directly modified the '.xaml' and '.cs' source files.\
+This is not a viable solution over time because I directly modified the '.xaml' and '.cs' source files.
 
 <ins>Note </ins>: The antivirus may control the executable.
 
