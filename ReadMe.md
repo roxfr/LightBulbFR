@@ -1,3 +1,5 @@
+=> FRENCH TRANSLATION TEST
+
 # LightBulb 💡
 
 [![Build](https://github.com/Tyrrrz/LightBulb/workflows/CI/badge.svg?branch=master)](https://github.com/Tyrrrz/LightBulb/actions)
