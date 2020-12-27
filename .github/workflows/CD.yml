@@ -41,7 +41,7 @@ jobs:
         tag_name: ${{ github.ref }}
         release_name: ${{ github.ref }}
         body: |
-          [Changelog](https://github.com/roxfr/LightBulbFR/blob/master/Changelog.md)
+          [Changelog](https://github.com/Tyrrrz/LightBulb/blob/master/Changelog.md)
         draft: false
         prerelease: false
 
