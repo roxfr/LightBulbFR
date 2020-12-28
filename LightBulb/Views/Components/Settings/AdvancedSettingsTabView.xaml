@@ -48,7 +48,7 @@
         </Grid>
 
         <!--  Default to day time  -->
-        <Grid Margin="6" ToolTip="Lorsque LightBulb est désactivé ou mis en pause, restaurer la température et la luminosité de jour configurées au lieu du gamma par défaut du moniteur">
+        <Grid Margin="6" ToolTip="Restaurer la température et la luminosité de jour configurées au lieu du gamma par défaut du moniteur lorsque LightBulb est désactivé ou mis en pause">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
