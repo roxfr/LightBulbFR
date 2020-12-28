@@ -17,8 +17,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Température de la couleur pendant la journée">
-            <TextBlock VerticalAlignment="Center" Text="Tempér. couleur pendant journée :" />
+            ToolTip="Température de la couleur durant la journée">
+            <TextBlock VerticalAlignment="Center" Text="Température de couleur de journée :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -41,8 +41,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Température de la couleur pendant la soirée">
-            <TextBlock VerticalAlignment="Center" Text="Tempér. couleur pendant soirée :" />
+            ToolTip="Température de la couleur durant le soir">
+            <TextBlock VerticalAlignment="Center" Text="Température de couleur de soir :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -65,7 +65,7 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Luminosité pendant la journée">
+            ToolTip="Luminosité durant la journée">
             <TextBlock VerticalAlignment="Center" Text="Luminosité de jour :" />
             <TextBox
                 MinWidth="30"
@@ -89,8 +89,8 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Luminosité pendant la soirée">
-            <TextBlock VerticalAlignment="Center" Text="Luminosité de soirée :" />
+            ToolTip="Luminosité durant le soir">
+            <TextBlock VerticalAlignment="Center" Text="Luminosité de soir :" />
             <TextBox
                 MinWidth="30"
                 Margin="8,0"
@@ -113,7 +113,7 @@
         <StackPanel
             Margin="6"
             Orientation="Horizontal"
-            ToolTip="Durée du temps nécessaire pour basculer entre les configurations de jour et de nuit">
+            ToolTip="Durée du temps nécessaire pour basculer entre les configurations de jour et de soir">
             <TextBlock VerticalAlignment="Center" Text="Durée de la transition :" />
             <TextBox
                 MinWidth="50"
